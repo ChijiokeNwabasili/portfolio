@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Chijioke Nwabasili, a Frontend Web Developer crafting responsive, user-centered websites using HTML, CSS, and JavaScript."
+    />
+    <meta name="author" content="Chijioke Nwabasili" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Chijioke Nwabasili | Frontend Web Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Chijioke Nwabasili, Frontend Web Developer. Showcasing responsive, user-focused projects built with HTML, CSS, and JavaScript."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chijioke Nwabasili" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://chijiokenwabasili.vercel.app" />
+    <meta
+      name="twitter:title"
+      content="Chijioke Nwabasili | Frontend Web Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Chijioke Nwabasili, Frontend Web Developer. Showcasing responsive, user-focused projects built with HTML, CSS, and JavaScript."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="" />
+    <link rel="canonical" href="https://chijiokenwabasili.vercel.app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chijioke Nwabasili | Frontend Web Developer Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a href="/" class="logo-text">Chijioke N.</a>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Navbar -->
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li>
+              <a href="#projects" aria-label="Explore my projects">Projects</a>
+            </li>
+            <li>
+              <a href="#services-skills" aria-label="Explore my services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#about" aria-label="Learn about Chijioke Nwabasili"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#contact" aria-label="Get in touch with me">Contact</a>
+            </li>
+            <li>
+              <a
+                href="assets/chijioke-nwabasili-frontend-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="resume-button resume-mobile"
+                >Download My Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a
+          href="assets/chijioke-nwabasili-frontend-cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="resume-button resume-desktop"
+          >Download My Resume</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <div class="container">
+          <h1 id="hero-heading">
+            Fast. <span>Intuitive</span>. <span>Human</span>.
+          </h1>
+          <p class="hero-subtext">
+            Hello <span class="wave">👋</span> I'm
+            <strong>Chijioke Nwabasili</strong>, a
+            <strong>Frontend Developer</strong> building responsive,
+            user-friendly websites that combine clean design, performance, and
+            real business goals.
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="#projects"
+              class="view-projects-btn"
+              aria-label="View my projects"
+              ><i class="fa-solid fa-folder-open" aria-hidden="true"></i> View
+              My Work</a
+            >
+            <a href="#contact" class="contact-me-btn">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects  -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="projects-title">Selected Projects</h2>
+          <h3 class="projects-subtitle">
+            A selection of my work showcasing clean code, responsive layouts,
+            and user-focused design.
+          </h3>
+          <div class="projects-grid">
+            <!-- Ilisabawn Website Project Card -->
+            <!-- <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-card-image">
+                <img
+                  src="screenshots/ilisabawn-website-hero.webp"
+                  alt="Screenshot of Ilisabawn website homepage"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-content">
+                <h4 class="project-name">Ilisabawn</h4>
+                <p class="project-description">
+                  A multi-page, responsive website for a custom handmade shoe
+                  brand built with HTML, CSS, and JavaScript to highlight
+                  craftsmanship and premium design of the products while
+                  creating a seamless customer journey. The site features an
+                  intuitive layout that lets users browse the collection, view
+                  pricing, place orders, and engage with the brand across
+                  devices.
+                </p>
+                <div class="project-tools">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-link-buttons">
+                  <a
+                    href="https://ilisabawn.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="live-link-btn"
+                  >
+                    <i class="fa-solid fa-link" aria-hidden="true"></i> Live
+                    Site
+                  </a>
+                </div>
+              </div>
+            </article> -->
+            <!-- NurtureNest Admin Dashboard Project Card -->
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-card-image">
+                <img
+                  src="screenshots/nurturenest-admin-dashboard.webp"
+                  alt="Screenshot of NurtureNest admin dashboard"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-content">
+                <h4 class="project-name">NurtureNest Admin Dashboard</h4>
+                <p class="project-description">
+                  A prototype admin dashboard for NurtureNest, built to enable
+                  staff to manage enrollments, daily logs, and content updates.
+                  It emphasizes usability and efficiency, with mock API
+                  integration and interactive data visualizations powered by
+                  Chart.js.
+                </p>
+                <div class="project-tools">
+                  <span>JavaScript</span>
+                  <span>Chart.js</span>
+                  <span>JSON</span>
+                </div>
+                <div class="project-link-buttons">
+                  <a
+                    href="https://nurturenestcare-admin-dashboard.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="live-link-btn"
+                  >
+                    <i class="fa-solid fa-link" aria-hidden="true"></i> Live
+                    Site
+                  </a>
+                  <a
+                    href="https://github.com/chijiokenwabasili/nurturenestcare-admin-dashboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="github-link-btn"
+                  >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- NurtureNest Website Project Card -->
+            <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-card-image">
+                <img
+                  src="screenshots/nurturenest-website-hero.webp"
+                  alt="Screenshot of NurtureNest website homepage"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-content">
+                <h4 class="project-name">NurtureNest</h4>
+                <p class="project-description">
+                  A self-initiated concept website for a childcare center, built
+                  with HTML, CSS, and JavaScript. Designed to build trust with
+                  parents exploring early learning options. The site emphasizes
+                  clarity and accessibility, making it easy for families to
+                  learn about the center, explore programs, and connect with
+                  staff.
+                </p>
+                <div class="project-tools">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-link-buttons">
+                  <a
+                    href="https://nurturenestcare.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="live-link-btn"
+                  >
+                    <i class="fa-solid fa-link" aria-hidden="true"></i> Live
+                    Site
+                  </a>
+                  <a
+                    href="https://github.com/chijiokenwabasili/nurturenestcare"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="github-link-btn"
+                  >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Bawn Legal Website Project Card -->
+            <!-- <article
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-card-image">
+                <img
+                  src="screenshots/bawn-legal-website-hero.webp"
+                  alt="Screenshot of Bawn Legal website homepage"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-content">
+                <h4 class="project-name">Bawn Legal</h4>
+                <p class="project-description"></p>
+                <div class="project-tools">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-link-buttons">
+                  <a
+                    href="https://bawnlegal.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="live-link-btn"
+                  >
+                    <i class="fa-solid fa-link" aria-hidden="true"></i> Live
+                    Site
+                  </a>
+                  <a
+                    href="https://github.com/chijiokenwabasili/bawnlegal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="github-link-btn"
+                  >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                  </a>
+                </div>
+              </div>
+            </article> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Services (What I Build + Tools) -->
+      <section id="services-skills" data-aos="fade-up">
+        <div class="container">
+          <h2 class="services-title">What I Build</h2>
+          <h3 class="services-subtitle">
+            I create fast, responsive, and user-friendly websites that work
+            seamlessly across devices.
+          </h3>
+          <div class="services-grid">
+            <article class="service-card">
+              <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+              <h4 class="service">Web Development</h4>
+              <p class="service-description">
+                I design and build custom landing pages, business sites, and
+                portfolios that are visually clear, lightweight, and fully
+                responsive, creating an engaging experience across devices.
+              </p>
+            </article>
+            <article class="service-card">
+              <i class="fa-solid fa-mobile-alt" aria-hidden="true"></i>
+              <h4 class="service">Responsive Design</h4>
+              <p class="service-description">
+                I craft layouts that adapt seamlessly across desktops, tablets,
+                and smartphones, ensuring your site always feels intuitive and
+                easy to use.
+              </p>
+            </article>
+            <article class="service-card">
+              <i class="fa-solid fa-tools" aria-hidden="true"></i>
+              <h4 class="service">Website Maintenance</h4>
+              <p class="service-description">
+                I help keep your website up-to-date and running smoothly with
+                content updates, UI fixes, and performance optimizations for
+                faster load times and a better user experience.
+              </p>
+            </article>
+          </div>
+          <!-- Tools Grid -->
+          <h4 class="skills-title">Technologies I Work With</h4>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <img
+                src="image/html-logo.svg"
+                alt="HTML Logo - Markup Language"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+              <h5 class="skill">HTML</h5>
+            </article>
+            <article class="skill-card">
+              <img
+                src="image/css-logo.svg"
+                alt="CSS Logo - Styling & Layout"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+              <h5 class="skill">CSS</h5>
+            </article>
+            <article class="skill-card">
+              <img
+                src="image/javascript-logo.svg"
+                alt="JavaScript Logo - Programming Language"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+              <h5 class="skill">JavaScript</h5>
+            </article>
+            <article class="skill-card">
+              <img
+                src="image/git-logo.svg"
+                alt="Git Logo"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+              <h5 class="skill">Git</h5>
+            </article>
+            <article class="skill-card">
+              <img
+                src="image/github-logo.svg"
+                alt="GitHub Logo"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+              <h5 class="skill">GitHub</h5>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" data-aos="fade-up">
+        <div class="container about-content">
+          <div class="about-text">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-description">
+              I'm <strong>Chijioke Nwabasili</strong>, a
+              <strong>Frontend Developer</strong> based in Nigeria. I build
+              user-focused websites that are visually clear, fast, and aligned
+              with business goals using <span>HTML</span>, <span>CSS</span>, and
+              <span>JavaScript</span>.
+            </p>
+            <p class="about-description">
+              I focus on creating digital experiences that not only look good
+              but also load quickly, adapt across devices, and feel natural to
+              use. I pay close attention to details that shape how people
+              interact with a site, ensuring it feels as smooth as it looks.
+            </p>
+            <p class="about-description">
+              For me, development isn't just about writing code, it's about
+              understanding why something should be built a certain way and
+              communicating those choices clearly with teammates and
+              stakeholders.
+            </p>
+            <p class="about-description">
+              I'm always learning and I value collaboration, especially when
+              technical and non-technical people come together to solve real
+              problems. If you're looking for a developer who builds with intent
+              and cares about usability from start to finish, feel free to
+              explore my work and get in touch.
+            </p>
+            <p class="about-description">
+              I also tutor beginners in frontend development with
+              <a
+                class="dotcampus-link"
+                href="https://dotcampus.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Dot Campus </a
+              >, teaching HTML, CSS, and JavaScript fundamentals. Teaching helps
+              me improve communication while deepening my understanding of the
+              core web.
+            </p>
+          </div>
+          <div class="about-image-container">
+            <div class="about-image-inner">
+              <img
+                class="about-image front-image"
+                src="image/chijioke-nwabasili-front-image.webp"
+                alt="Headshot of Chijioke Nwabasili"
+              />
+              <img
+                class="about-image back-image"
+                src="image/chijioke-nwabasili-back-image.webp"
+                alt="Alternate headshot of Chijioke Nwabasili"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" data-aos="fade-up">
+        <div class="container">
+          <h2 class="contact-title">Let's Connect</h2>
+          <p class="contact-subtitle">
+            I'm open to new roles, collaborations, and conversations. Fill out
+            the form below or reach out via email, phone, or social media, and
+            I'll get back to you as soon as I can.
+          </p>
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3>Contact Information</h3>
+              <ul class="social-links">
+                <li>
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <a href="mailto:chijioke.nwabasili2021@gmail.com"
+                    >Send me an email
+                  </a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                  <a
+                    href="https://linkedin.com/in/chijioke-nwabasili"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my LinkedIn profile"
+                    >LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <a
+                    href="https://github.com/chijiokenwabasili"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile"
+                    >GitHub
+                  </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                  <a href="tel:+2347038592615">Call me</a>
+                </li>
+              </ul>
+              <h4>Location</h4>
+              <p class="location">Lagos, Nigeria · Available globally</p>
+            </div>
+            <!-- Contact Form -->
+            <form
+              id="contact-form"
+              action="https://usebasin.com/f/ae87e1549600"
+              method="post"
+              aria-label="Contact Form"
+            >
+              <!-- Honeypot field for bots -->
+              <div style="position: absolute; left: -9999px; top: 0">
+                <label for="_gotcha">Leave this field empty</label>
+                <input
+                  type="text"
+                  name="_gotcha"
+                  id="_gotcha"
+                  autocomplete="off"
+                  tabindex="-1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="off"
+                  aria-required="true"
+                />
+                <div class="error-message" id="name-error" role="alert"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                  required
+                  autocomplete="off"
+                  aria-required="true"
+                />
+                <div class="error-message" id="email-error" role="alert"></div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  minlength="10"
+                  maxlength="500"
+                  placeholder="Are you hiring or interested in collaborating? Type it here..."
+                  required
+                  aria-required="true"
+                ></textarea>
+                <div
+                  class="error-message"
+                  id="message-error"
+                  role="alert"
+                ></div>
+              </div>
+              <button type="submit">Send Your Message</button>
+            </form>
+          </div>
+          <!-- Success Message -->
+          <p id="success-message" class="success-message" style="display: none">
+            ✅ Thank you! Your message has been sent successfully. I'll get back
+            to you soon.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-wrapper">
+        <!-- Logo & Tagline -->
+        <div class="footer-section">
+          <a href="/" class="footer-logo">Chijioke N.</a>
+          <p class="footer-tagline">
+            Frontend Developer building fast, intuitive, and user-focused
+            websites.
+          </p>
+        </div>
+        <!-- Explore -->
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#projects" aria-label="Explore my projects">Projects</a>
+            </li>
+            <li>
+              <a href="#services-skills" aria-label="Explore my services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#about" aria-label="Learn about Chijioke Nwabasili"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#contact" aria-label="Get in touch with me">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Let's Connect -->
+        <div class="footer-section">
+          <h3>Let's Connect</h3>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="mailto:chijioke.nwabasili2021@gmail.com"
+                aria-label="Send me an email"
+                >Email</a
+              >
+            </li>
+            <li>
+              <a href="tel:+2347038592615" aria-label="Call me">Phone</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Social -->
+        <div class="footer-section">
+          <h3>Connect with Me</h3>
+          <p>Stay connected with me on social platforms below.</p>
+          <ul class="social-icons">
+            <li>
+              <a
+                href="https://linkedin.com/in/chijioke-nwabasili"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/chijioke_dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X profile (formerly Twitter)"
+              >
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2025 Chijioke Nwabasili. All rights reserved.
+      </p>
+      <a href="#hero" aria-label="Scroll to the top" class="back-to-top-btn">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
