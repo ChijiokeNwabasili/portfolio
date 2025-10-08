@@ -1,5 +1,7 @@
 # Chijioke Nwabasili - Frontend Developer Portfolio
 
+A responsive portfolio website built with HTML, CSS, and JavaScript. It showcases my skills as a frontend developer, including a clean layout, smooth navigation, and interactive elements, designed to give visitors a quick, engaging overview of my work and capabilities.
+
 ## 🌐 Live Demo:
 
 [View the live portfolio](https://chijiokenwabasili.vercel.app)
