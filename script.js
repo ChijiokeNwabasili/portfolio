@@ -1,0 +1,112 @@
+"use strict";
+
+// Mobile Navigation
+const menuToggle = document.getElementById("menu-toggle");
+
+if (menuToggle) {
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.checked = false;
+      document.body.classList.remove("no-scroll");
+    });
+  });
+
+  menuToggle.addEventListener("change", () => {
+    document.body.classList.toggle("no-scroll", menuToggle.checked);
+  });
+}
+
+// Contact Form Validation & Submission
+function setupFormValidation(formId) {
+  const form = document.getElementById(formId);
+
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+  const nameError = document.getElementById("name-error");
+  const emailError = document.getElementById("email-error");
+  const messageError = document.getElementById("message-error");
+
+  const successMessage = document.getElementById("success-message");
+
+  // Validation functions
+  function validateName() {
+    if (nameInput.value.trim().length < 2) {
+      nameError.textContent = "Please enter at least 2 characters.";
+      return false;
+    }
+    nameError.textContent = "";
+    return true;
+  }
+
+  function validateEmail() {
+    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+    if (!pattern.test(emailInput.value.trim())) {
+      emailError.textContent = "Enter a valid email address.";
+      return false;
+    }
+    emailError.textContent = "";
+    return true;
+  }
+
+  function validateMessage() {
+    if (messageInput.value.trim().length < 10) {
+      messageError.textContent = "Message must be at least 10 characters.";
+      return false;
+    }
+    messageError.textContent = "";
+    return true;
+  }
+
+  // Real-time validation
+  nameInput.addEventListener("input", validateName);
+  emailInput.addEventListener("input", validateEmail);
+  messageInput.addEventListener("input", validateMessage);
+
+  // Form Submission
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+    const isMessageValid = validateMessage();
+
+    if (!isNameValid || !isEmailValid || !isMessageValid) {
+      return; // Stop if any field is invalid
+    }
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+      });
+
+      if (response.ok) {
+        form.reset();
+        if (successMessage) {
+          successMessage.style.display = "block";
+          successMessage.textContent =
+            "Message received. I'll respond within 24 hours.";
+
+          // Hide after 5 seconds
+          setTimeout(() => {
+            successMessage.style.display = "none";
+            successMessage.textContent = "";
+          }, 5000);
+        }
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  });
+}
+
+setupFormValidation("contact-form");
+
+// Update the copyright year automatically to always show the current year
+document.querySelector(".copyright").innerHTML =
+  `© ${new Date().getFullYear()} Chijioke Nwabasili. All rights reserved.`;
